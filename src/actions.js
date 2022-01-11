@@ -8,7 +8,7 @@ export const dec = () => ({
     type: "DEC"
 });
 
-export const rnd = (value) => ({
+export const rnd = () => ({
     type: "RND",
-    payload: value
+    payload: Math.floor(Math.random() * 10)
 });
